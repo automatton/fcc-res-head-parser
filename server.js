@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.route('/whoami')
   .get(function(req, res) {
     let response = {};
-    response.IP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-    response.language = req.headers['accept-language'];
+    response.IP = req.headers['x-forwarded-for'].split(',')[0] || req.connection.remoteAddress.replace(/[:f]/g, '');
+    response.language = req.headers['accept-language'].split(',')[0];
     const ua = useragent.parse(req.headers['user-agent']);
     response.OS = ua.os.toString();
     //response.headers = req.headers;
