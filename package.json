@@ -1,0 +1,30 @@
+{
+  "name": "fcc-res-head-parser",
+  "version": "1.0.0",
+  "description": "respond to requests with ID, language, OS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automatton/fcc-res-head-parser.git"
+  },
+  "keywords": [
+    "fcc",
+    "glitch",
+    "express"
+  ],
+  "author": "automatton",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/automatton/fcc-res-head-parser/issues"
+  },
+  "homepage": "https://github.com/automatton/fcc-res-head-parser#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "useragent": "^2.2.1"
+  }
+}
